@@ -1,0 +1,58 @@
++++++++++++++++++++++++JavaScript Execution Context+++++++++++++++++++++++
+#it means how JavaScript executes/run you .js files
+#its different for different code execution environment and browser.
+#when JS execution happens then the {} Global Execution Context is already present.
+#There  are mainly two exceution context only that is Global and Functional exceution context.But in some documentations such as that of mongoose they mention Eval(it is itself a property) Execution Context as well.In Interview you can tell two also that is also fine.
+1.JS creates Global excution context 
+2.Next it creates memory phase
+3.Memory phase - In this phase,the variables are set to undefined 
+  until the execution phase(next phase) and the functions are set to their definitions.
+4.Next it creates the execution phase
+5.Execution phase - In this phase,the variables are initialsed to given values and 
+  when the function s are called,it creates a memory phase and execution phase for the function 
+  just like the main one.
+
+For live demo:
+browser > inspect > Sources
+create a snippet with few functions and visually experience the call stack.
+
+
+Understanding JavaScript Code Execution
+JavaScript code executes in a sequential manner.
+The code execution can be visualized using the browser's memory.
+
+✦ JavaScript Execution Context is how the script runs and executes code.
+The script runs in two phases.
+The global execution context is the first context created and is referred to a variable.
+
+✦ The memory creation phase is the first phase in executing JavaScript code.
+During the memory creation phase, variables are declared and memory space is allocated for them.
+Mathematical functions and other operations are not executed during this phase.
+
+✦The execution of JavaScript code involves a Global Execution phase and a Memory Creation phase.
+The Global Execution phase runs the code first and is responsible for executing all the code, regardless of its size.
+The Memory Creation phase collects and defines all the variables in the code.
+
+✦ JavaScript executes code by creating separate execution contexts for each function.
+Each function has its own sandbox of variables and an execution thread.
+Memory and execution phases are performed within each execution context.
+
+✦ Execution context is where the code is executed and variables are stored.
+The execution context contains the definition of variables and their values.
+The execution context determines the order of execution and the flow of the program.
+
+✦Execution context and call stack are key components of JavaScript execution.
+The memory phase stores variables and functions.
+The execution phase executes code and updates values in the execution context.
+
+✦Understanding execution context and call stack in JavaScript
+Execution context determines how JavaScript code is executed
+Call stack follows the Last In First Out (LIFO) principle, determining the order of execution
+
+ ✦Execution process in JavaScript involves loading, memory phase, and execution phase
+Code execution is done step by step using breakpoints and step-through feature
+Each function call creates a new frame in the call stack with its own memory and execution context
+
+✦ Executing code and call stack explained
+Executing code involves running through each step in a program
+The call stack keeps track of function calls and their execution
